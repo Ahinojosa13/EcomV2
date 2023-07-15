@@ -5,16 +5,17 @@ import Banner from "../Images/Myproject-1.png"
 // import Hamburger from "@material-ui/icons/Reorder";
 // import "../styles/";
 
-function Nav() { 
+class Nav extends React.Component{
+  render(){
   const [openLinks, setOpenLinks] = useState(false);    //Using State allows the to be default hidden unless clicked 
 
   const toggleNav = () => {
-
+    setOpenLinks(!openLinks);
   }  
   return (
       <section id="nav">
         <div className='nav-left' id={openLinks ? "open" : "close"}> 
-          <img src={Logo}/>
+          <img src={Logo} alt='logo'/>
           <div className='hamburgerLinks'>
             <link to="/"> HOME </link>
             <link to="/etgp"> PRODUCTS </link>
@@ -22,7 +23,7 @@ function Nav() {
           </div>
         </div>  
         <div className='nav-middle'>
-          <img src={Banner}/>
+          <img src={Banner} alt='banner'/>
         </div>
         <div className='nav-right'>
           <link to="/"> HOME </link>
@@ -33,7 +34,8 @@ function Nav() {
           </button>
         </div>
       </section>
-  );
+    );
+  }
 }
 
 export default Nav;

@@ -1,4 +1,5 @@
 import React from "react";
+// import ReactDOM from 'react-dom';
 import Header from "./components/Nav";
 import Home from "./pages/Home";
 import ETGP from "./pages/ETGP";
@@ -7,8 +8,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import "./ETGP.css";
-import "./Contact.css";
+// import "../src/pages/styles/";
 
 function App() {
   return (

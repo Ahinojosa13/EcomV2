@@ -1,11 +1,11 @@
 import React from 'react';
-// import InstagramIcon from "@material-ui/icons/Instagram";
-// import TwitterIcon from "@material-ui/icons/Twitter";
-// import FacebookIcon from "@material-ui/icons/Facebook";
-// import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import "../styles/Skele.css";
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
+ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />, document.body);
+// import "../src/styles/Skele.css";
 
-function Footer(){
+class Footer extends React.Component{
+    render(){
     return (
         <div className="footer">
                 <div className="footer-left">
@@ -22,11 +22,16 @@ function Footer(){
                     </p>
                 </div>
                 <div className="footer-socials">
-                    {/* <InstagramIcon /> <TwitterIcon /> <FacebookIcon /> <LinkedInIcon /> */}
+                <SocialIcon network="twitter" bgColor="#ff5a01" url='https://twitter.com'/>
+                <SocialIcon network="instagram" bgColor="#ff5a01" url='https://instagram.com'/>
+                <SocialIcon network="facebook" bgColor="#ff5a01" url='https://facebook.com'/>
+                
                 </div>
                 <p> &copy; 2023 El Tigre's Gear</p>
             </div> 
         );
+    }
 }
+
 
 export default Footer;
