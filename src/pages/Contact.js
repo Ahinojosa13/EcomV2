@@ -1,6 +1,6 @@
 import React from "react";
 import CTiger from "../Images/ctiger.webp";
-import "../"
+
 
 function Contact() {
     return (

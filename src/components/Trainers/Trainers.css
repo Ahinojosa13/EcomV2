@@ -1,0 +1,23 @@
+.trainers {
+    border: 2px solid #320AFA;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .trainers::after {
+    /* Clear floats after containers */
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .trainers img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 90px;
+  }
+  .trainers span {
+    font-size: 20px;
+    margin-right: 15px;
+  }

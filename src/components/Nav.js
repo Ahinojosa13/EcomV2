@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Logo from "../Images/ElTigre'sGym-1.png"
-import Banner from "../Images/Myproject-1.png"
-// import { Link } from "react-router-dom";
-// import Hamburger from "@material-ui/icons/Reorder";
-// import "../styles/";
+import { Link } from "react-router-dom";
+import Hamburger from 'hamburger-react'
+import Logo from "../Images/ElTigre'sGym-1.png";
+import Banner from "../Images/Myproject-1.png";
+// import '../styles/Nav.css';
 
-class Nav extends React.Component{
-  render(){
+const Nav = () => {
   const [openLinks, setOpenLinks] = useState(false);    //Using State allows the to be default hidden unless clicked 
 
   const toggleNav = () => {
     setOpenLinks(!openLinks);
-  }  
+  };
+
   return (
       <section id="nav">
         <div className='nav-left' id={openLinks ? "open" : "close"}> 
@@ -30,12 +30,12 @@ class Nav extends React.Component{
           <link to="/etgp"> PRODUCTS </link>
           <link to="/contact"> CONTACT </link>
           <button onClick={toggleNav}>
-            {/* <Hamburger /> */}
+            <Hamburger />
           </button>
         </div>
       </section>
-    );
-  }
-}
+  );
+};
+
 
 export default Nav;

@@ -1,5 +1,5 @@
 import React from "react";
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import Header from "./components/Nav";
 import Home from "./pages/Home";
 import ETGP from "./pages/ETGP";
