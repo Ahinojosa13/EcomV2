@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-// import "../src/styles/Skele.css";
+import '../styles/Footer.css';
 
 class Footer extends React.Component{
     render(){
@@ -16,16 +16,15 @@ class Footer extends React.Component{
                         704 Queen City<br/>
                         Charlotte, NC USA 28213<br/>
                         Phone: 980-704-3333<br/>
-                        Email: info@example.com
+                        Email: info@example.com<br/>
+                        &copy; 2023 El Tigre's Gear
                     </p>
                 </div>
                 <div className="footer-socials">
-                <SocialIcon network="twitter" bgColor="#ff5a01" url='https://twitter.com'/>
-                <SocialIcon network="instagram" bgColor="#ff5a01" url='https://instagram.com'/>
-                <SocialIcon network="facebook" bgColor="#ff5a01" url='https://facebook.com'/>
-
+                    <SocialIcon network="twitter" bgColor="#ff5a01" url='https://twitter.com'/>
+                    <SocialIcon network="instagram" bgColor="#ff5a01" url='https://instagram.com'/>
+                    <SocialIcon network="facebook" bgColor="#ff5a01" url='https://facebook.com'/>
                 </div>
-                <p> &copy; 2023 El Tigre's Gear</p>
             </div> 
         );
     }

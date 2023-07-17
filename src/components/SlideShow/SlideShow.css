@@ -1,7 +1,21 @@
-.slide > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slideShow{
+    max-width: 100%;
+    position: relative;
+}
+.each-slide{
+    display: none;
+    position: relative;
+    height: 400px;
+}
+.each-slide> div{
     background-size: cover;
-    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+}
+@media (max-width: 768px){
+    .each-slide{
+        height: 300px;
+    }
 }
