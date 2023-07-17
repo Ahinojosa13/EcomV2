@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import ReactDOM from 'react-dom';
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 import Header from "./components/Nav";
 import Home from "./pages/Home";
 import ETGP from "./pages/ETGP";
@@ -13,18 +13,18 @@ import "./App.css";
 function App() {
   return (
     // <div className="App">
-      <Router>
+      <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/etgp" element={<ETGP />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/etgp" element={<ETGP />} />
+            <Route exact path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
-        </Router>    
+        </BrowserRouter>    
       // </div>
   );
 };
-ReactDOM.render.apply(<App/>, document.getElementById('root'));
+
 
 export default App;

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import b1img from "../Images/hometiger.webp";
 import SlideShow from "../components/SlideShow/SlideShow";
-import Trainer from "../components/Trainers/Trainers";
+import Trainers from "../components/Trainers/Trainers";
 import "../styles/Home.css";
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
           <SlideShow />
         </div>  
         <div className="block3">
-          <Trainer />
+          <Trainers />
         </div>
     </div>
   );

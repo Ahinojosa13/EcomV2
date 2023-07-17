@@ -5,7 +5,7 @@ import b3bimg from "../../Images/prisy.webp";
 import b3cimg from "../../Images/cbum.webp";
 import b3dimg from "../../Images/elika.webp";
 
-const Trainer = () => {
+const Trainers = () => {
     return (
         <div className="Trainerblock">
             <h1> Partners of EL TIGRE</h1>
@@ -32,4 +32,4 @@ const Trainer = () => {
         </div>
     );
 };
-export default Trainer;        
+export default Trainers;        

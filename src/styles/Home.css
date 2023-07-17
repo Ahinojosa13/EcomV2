@@ -16,7 +16,6 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     padding-left: 20px;
-    background-color: #320AFA;
     width: auto;
 }
 .block1 p {
@@ -35,7 +34,12 @@
     flex: 0 0 100%;
     text-align: center;
     padding: 2rem;
+    background-color: #320AFA;
+    width: 35px;
+    height: 400px;
 }
+
+    
 .block3{
     flex: 0 0 100%;
     text-align: center;
