@@ -1,0 +1,82 @@
+.homeblock {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.block1 {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-top: 214px;
+    background-color: grey;
+    color: black;
+    height: 494px;
+}
+.block1 h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    background-color: #320AFA;
+    width: auto;
+}
+.block1 p {
+    font-size: 1.5rem;
+    margin-bottom:2rem;
+}
+.block1 button {
+    padding: 0.rem 2rem;
+    font-size: 1.2rem;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.block2{
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 2rem;
+}
+.block3{
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 2rem;
+}
+.trainers{
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: grey;
+    border: 2px solid #320AFA;
+    border-radius: 5px;
+}
+.trainers img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.trainers p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.trainers span{
+    font-size: 20px;
+    margin-right: 15px;
+}
+@media (max-width: 768px) {
+    .block1{
+        padding: 1rem;
+    }
+    .block1 h1{
+        font-size: 2rem;
+    }
+    .block1 p{
+        font-size: 1.2rem;
+    }
+    .block1 button{
+        font-size: 1rem;
+    }
+    .trainers{
+        width: calc(50% - 20px);
+    }
+}

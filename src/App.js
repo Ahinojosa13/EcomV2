@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Nav";
 import Home from "./pages/Home";
 import ETGP from "./pages/ETGP";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 // import "../src/pages/styles/";
 
 function App() {
   return (
-    <div className="App">
+    // <div className="App">
       <Router>
           <Header />
           <Routes>
@@ -22,8 +22,9 @@ function App() {
           </Routes>
           <Footer />
         </Router>    
-      </div>
+      // </div>
   );
-}
+};
+ReactDOM.render.apply(<App/>, document.getElementById('root'));
 
 export default App;
