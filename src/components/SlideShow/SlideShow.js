@@ -18,7 +18,7 @@ const SlideShow = () => {
         <div className="slideShow">
             <Slide>
                 {/* Map is being use to return object I (index) Value from Array SlideShowImg */}
-                {SlideShowImg.map((SlideShowImg, i) => (
+                {SlideShowImg.map((slide, i) => (
                     <div  className="slide" key={i}>
                         <div style={{backgroundImage: `url(${SlideShowImg[i]})`}}/>
                     </div>

@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
-ReactDOM.render(<SocialIcon url="https://twitter.com/jaketrent" />, document.body);
 // import "../src/styles/Skele.css";
 
 class Footer extends React.Component{
@@ -25,7 +23,7 @@ class Footer extends React.Component{
                 <SocialIcon network="twitter" bgColor="#ff5a01" url='https://twitter.com'/>
                 <SocialIcon network="instagram" bgColor="#ff5a01" url='https://instagram.com'/>
                 <SocialIcon network="facebook" bgColor="#ff5a01" url='https://facebook.com'/>
-                
+
                 </div>
                 <p> &copy; 2023 El Tigre's Gear</p>
             </div> 
