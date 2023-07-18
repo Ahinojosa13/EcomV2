@@ -22,7 +22,7 @@ db.connect((error) => {
 });
 
 app.get("/gear", (req, res) => {
-  db.query("SELECT * FROM ecomv2items", (error, results) => {
+  db.query("SELECT * FROM gear", (error, results) => {
     if (error) {
       console.error("Error retrieving gear data: ", error);
       res.status(500).json({ error: "Internal server error" });
@@ -32,17 +32,9 @@ app.get("/gear", (req, res) => {
   });
 });
 
-app.get("/gear/catergory/:catergory", (req, res) => {
-  const catergory = req.params.catergory;
-  let query = "";
-
-  if (catergory === "clothes" || catergory === "juice" || catergory === "gym gear" || catergory === "accessories") {
-    query = `SELECT * FROM ecomv2items WHERE sort="${catergory}"`;
-  } else {
-    query = "SELECT * FROM ecomv2items"; // Return all products if category is not valid
-  }
-
-  db.query(query, (error, results) => {
+app.get("/gear/category/:category", (req, res) => {
+  const category = req.params.category
+  db.query(`SELECT * FROM gear WHERE catergory="${category}"`, (error, results) => {
     if (error) {
       console.error("Error retrieving gear data: ", error);
       res.status(500).json({ error: "Internal server error" });
@@ -52,6 +44,46 @@ app.get("/gear/catergory/:catergory", (req, res) => {
   });
 });
 
+// app.get("/gear/catergory/juice", (req, res) => {
+//   db.query("SELECT * FROM gear WHERE catorgory LIKE '%juice%'", (error, results) => {
+//     if (error) {
+//       console.error("Error retrieving gear data: ", error);
+//       res.status(500).json({ error: "Internal server error" });
+//     } else {
+//       res.json(results);
+//     }
+//   });
+// });
+// app.get("/gear/catergory/gymgear", (req, res) => {
+//   db.query("SELECT * FROM gear WHERE catorgory LIKE '%gym gear%'", (error, results) => {
+//     if (error) {
+//       console.error("Error retrieving gear data: ", error);
+//       res.status(500).json({ error: "Internal server error" });
+//     } else {
+//       res.json(results);
+//     }
+//   });
+// });
+// app.get("/gear/catergory/accessories", (req, res) => {
+//   db.query("SELECT * FROM gear WHERE catorgory LIKE '%accessories%'", (error, results) => {
+//     if (error) {
+//       console.error("Error retrieving gear data: ", error);
+//       res.status(500).json({ error: "Internal server error" });
+//     } else {
+//       res.json(results);
+//     }
+//   });
+// });
+// app.get("/gear/catergory/clothes", (req, res) => {
+//   db.query("SELECT * FROM gear WHERE catorgory LIKE '%clothes%", (error, results) => {
+//     if (error) {
+//       console.error("Error retrieving gear data: ", error);
+//       res.status(500).json({ error: "Internal server error" });
+//     } else {
+//       res.json(results);
+//     }
+//   });
+// });
 app.listen(8000, () => {
   console.log("Connected to backend");
 });

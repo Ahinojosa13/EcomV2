@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ProductsCard from "./Cards";
+import Dropdown2 from "./Dropdown";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
 
+  // On render call fetch all plans
   useEffect(() => {
     // Fetch products and set initial state
     const fetchProducts = async () => {
@@ -13,7 +14,6 @@ const Products = () => {
         const data = await response.json();
         if (data) {
           setProducts(data);
-          setFilteredProducts(data);
         }
         console.log("data: ", data);
       } catch (error) {
@@ -28,18 +28,10 @@ const Products = () => {
     };
   }, []);
 
-  const handleFilterChange = (catergory) => {
-    if (catergory === "all") {
-      setFilteredProducts(products);
-    } else {
-      const filtered = products.filter((product) => product.sort === catergory);
-      setFilteredProducts(filtered);
-    }
-  };
-
   return (
     <div>
-      {filteredProducts.map((product) => (
+      <Dropdown2 setProducts={setProducts}/>
+      {products.map((product) => (
         <ProductsCard key={product.id} gear={product} />
       ))}
     </div>

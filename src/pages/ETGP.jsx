@@ -1,12 +1,11 @@
 import React from "react";
-// import Products from "../components/Products/Products";
-import Filter from "../components/Products/Filter";
+import Products from "../components/Products/Products";
+
 
 const ETGP = () => {
   return (
     <div>
-      <Filter />
-      {/* <Products /> */}
+      <Products />
     </div>
   );
 };

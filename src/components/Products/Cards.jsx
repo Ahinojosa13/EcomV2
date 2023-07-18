@@ -3,21 +3,21 @@ import "../../styles/Cards.css";
 
 const ProductsCard = ({gear}) => {
     const {
-        image,
+        images,
         name,
         description,
         alt,
         price,
     } = gear;
 
-    function getImagePath(image) {
-        return `../../${image}`;
-    }
+    // function getImagesPath(images) {
+    //     return `.${images}`;
+    // }
 
     return(
         <div>
             <section className="cards">
-            <img src={getImagePath()} alt={alt}/> 
+            <img src={images} alt={alt}/> 
             <h2>{name}</h2> 
             <p>{description}</p> 
             <span>{price}</span> 

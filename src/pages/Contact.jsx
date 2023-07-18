@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CTiger from "../Images/ctiger.webp";
+import CTiger from "../images/ctiger.webp";
 
 
 function Contact() {
