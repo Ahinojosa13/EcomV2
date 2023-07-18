@@ -1,0 +1,41 @@
+.cards {
+    background-color: #444;
+    min-height: 600px;
+    color: #fff;
+    border-radius: .313rem;
+    font-size: 150%;
+    width: 40%;
+  }
+  .cards h1 {
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-top: 0.625rem;
+    max-height: 125px;
+  }
+  .cards img {
+    width: 12.5rem;
+    max-height: 12.5rem;
+    margin-bottom: 0.625rem;
+    margin-top: 1rem;
+  }
+  .cards h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: azure;
+    margin-bottom: 0.625rem;
+  }
+  .cards p {
+    font-weight: bold;
+    font-size: 1.125rem;
+    max-height: 186px;
+    margin-bottom: .625rem;
+  }
+  .cards button {
+    background-color: #d4d4d4;
+    color: #ffffff;
+    border: none;
+    padding: .625rem 1.25rem;
+    border-radius: .313rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }

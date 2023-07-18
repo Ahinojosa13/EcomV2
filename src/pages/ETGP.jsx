@@ -1,13 +1,14 @@
-import Products from "../components/Products";
 import React from "react";
+// import Products from "../components/Products/Products";
+import Filter from "../components/Products/Filter";
 
-function ETGP(){
-    return (
-        <div>
-            <p>hello world</p>
-            <Products />
-        </div>
-    );
-}
+const ETGP = () => {
+  return (
+    <div>
+      <Filter />
+      {/* <Products /> */}
+    </div>
+  );
+};
 
 export default ETGP;
