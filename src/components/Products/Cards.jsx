@@ -9,11 +9,7 @@ const ProductsCard = ({gear}) => {
         alt,
         price,
     } = gear;
-
-    // function getImagesPath(images) {
-    //     return `.${images}`;
-    // }
-
+    
     return(
         <div>
             <section className="cards">
