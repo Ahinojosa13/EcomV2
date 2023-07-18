@@ -10,8 +10,7 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "password",
-    database: "mysql",
-
+    database: "ecomv2items",
 });
 
 db.connect((error) => {
@@ -31,11 +30,10 @@ app.get("/gear", (req, res) => {
       }
     });
   });
-  app.get("/carsid", (req, res) => {
-    const carIds = [1, 3, 5, 6, 8];
-  
+  app.get("/gear/category/:category", (req, res) => {  
+    const category = req.params.category
     db.query(
-      `SELECT * FROM gear WHERE gear_id IN (${gearIds.join(",")})`,
+      `SELECT * FROM gear WHERE category="${category}"`,
       (error, results) => {
         if (error) {
           console.error("Error retrieving gear data: ", error);
