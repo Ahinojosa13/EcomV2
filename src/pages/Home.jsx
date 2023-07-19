@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import b1img from "../images/hometiger.webp";
+import b1img from "../Images/hometiger.webp";
 import SlideShow from "../components/SlideShow/SlideShow";
 import Trainers from "../components/Trainers/Trainers";
 import "../styles/Home.css";
