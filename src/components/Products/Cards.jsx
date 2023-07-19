@@ -13,11 +13,11 @@ const ProductsCard = ({gear}) => {
     return(
         <div>
             <section className="cards">
-            <img src={images} alt={alt}/> 
-            <h2>{name}</h2> 
-            <p>{description}</p> 
-            <span>{price}</span> 
-            <button>Order Now</button> 
+            <img src={images} alt={alt}/> <br/> 
+            <h2>{name}</h2> <br/>
+            <p>{description}</p> <br/>
+            <span>{price}</span> <br/>
+            <button>Order Now</button> <br/> 
             </section>
         </div>
     )
