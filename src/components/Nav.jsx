@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Hamburger from 'hamburger-react'
-import Logo from "../images/ElTigreGym-1.png";
-import Banner from "../images/Myproject-1.png";
+import Logo from "../Images/ElTigreGym-1.png";
+import Banner from "../Images/Myproject-1.png";
 import '../styles/Nav.css';
 
 const Nav = () => {

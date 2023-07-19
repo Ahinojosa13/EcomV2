@@ -1,9 +1,9 @@
 import React from "react";
 import "../Trainers/Trainers.css";
-import b3aimg from "../../images/me.webp";
-import b3bimg from "../../images/prisy.webp";
-import b3cimg from "../../images/cbum.webp";
-import b3dimg from "../../images/elika.webp";
+import b3aimg from "../../Images/me.webp";
+import b3bimg from "../../Images/prisy.webp";
+import b3cimg from "../../Images/cbum.webp";
+import b3dimg from "../../Images/elika.webp";
 
 const Trainers = () => {
     return (
