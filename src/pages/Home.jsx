@@ -9,10 +9,10 @@ function Home() {
   return (
     <div className="homeblock">
         <div className="block1" style={{ backgroundImage: `url(${b1img})` }}>
-            <h1> El Tigre's Gear </h1>
+            <h1>El Tigre's Gear</h1>
             <p>BEGIN YOUR JOURNEY</p>
             <Link to="/ETGP">
-            <button> ORDER NOW </button>
+            <button>ORDER NOW</button>
             </Link>
         </div>
         <div className="block2">
