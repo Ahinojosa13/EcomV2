@@ -17,7 +17,7 @@ describe('Home component', ()=>{
                 <Home/>
             </MemoryRouter>
         );
-        const heading = getByText(/El Tigre's Gear/i);
+        const heading = getByText("El Tigre's Gear");
         expect(heading).toBeInTheDocument();
     });
     test('renders the button', ()=>{

@@ -2,7 +2,7 @@ import React from "react";
 // import ReactDOM from 'react-dom';
 import { BrowserRouter , Route, Routes } from "react-router-dom";
 import Header from "./components/Nav";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import ETGP from "./pages/ETGP";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
