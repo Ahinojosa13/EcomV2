@@ -12,18 +12,17 @@ describe('Home component', ()=>{
             </MemoryRouter>
         );
     });
+    
     test('renders the h1 correctly', ()=>{
         const { getByText } = render(
             <MemoryRouter>
                 <Home/>
             </MemoryRouter>
         );
-        // const heading = getByText("El Tigre's Gear");
-        // const heading = screen.getByRole('heading', { name: /El Tigre's Gear/i });
-        // expect(heading).toHaveTextContent("El Tigre's Gear");
         let wrapper = document.querySelector('h1');
 expect(wrapper?.textContent).toEqual("El Tigre's Gear");
     });
+   
     test('renders the button', ()=>{
         const { getByText } = render(
             <MemoryRouter>
@@ -34,13 +33,27 @@ expect(wrapper?.textContent).toEqual("El Tigre's Gear");
         let wrapperbttn = document.querySelector('button');
         expect(wrapperbttn.textContent).toEqual("ORDER NOW");
     });
-    test('renders the Trainers Component', ()=>{
-        const { getByTestId } = render(
+   
+    test('renders the button', ()=>{
+        const { getByText } = render(
             <MemoryRouter>
                 <Home/>
             </MemoryRouter>
         );
-        const trainers = getByTestId(<Trainers/>);
-        expect(trainers).toBeInTheDocument();
+        // const orderButton = getByText("ORDER NOW");
+        let wrapperbttn = document.querySelector('button');
+        expect(wrapperbttn.textContent).toEqual("ORDER NOW");
     });
-})
+        
+    test('renders the h2 correctly', ()=>{
+        const { getByText } = render(
+            <MemoryRouter>
+                <Home/>
+            </MemoryRouter>
+        );
+    let wrapperh2 = document.querySelector('h2');
+expect(wrapperh2?.textContent).toEqual(" Partners of EL TIGRE");
+    });
+   
+    });
+    

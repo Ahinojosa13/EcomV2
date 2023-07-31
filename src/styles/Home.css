@@ -84,3 +84,35 @@
         width: calc(50% - 20px);
     }
 }
+
+.Trainerblock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .trainers{
+    width: calc(25% - 20px);
+    border: 2px solid #320AFA;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+  }
+  .trainers img {
+    margin-right: 20px;
+    border-radius: 50%;
+    width:95px;
+  }
+  .trainers p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .trainers span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  @media (max-width: 768px){
+    .trainers{
+      width: calc(50% - 20px);
+    }
+  }
